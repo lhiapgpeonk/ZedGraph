@@ -236,7 +236,7 @@ namespace ZedGraph
 				tRect.Inflate( scaledInflate, scaledInflate );
 
 				using ( Pen pen = GetPen( pane, scaleFactor) )
-					g.DrawRectangle( pen, tRect.X, tRect.Y, tRect.Width, tRect.Height );
+					g.DrawRectangle( pen, tRect.X + pen.Width / 2f, tRect.Y + pen.Width / 2f, tRect.Width, tRect.Height );
 
 				g.SmoothingMode = smode;
 			}
